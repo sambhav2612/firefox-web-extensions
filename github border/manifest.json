@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "GitHub Borders",
+  "version": "1.0",
+
+  "description": "Adds a red border to all webpages matching github.com",
+
+   "icons": {
+    "64": "icons/icon(1).png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*"],
+      "js": ["border.js"]
+    }
+  ]
+
+}
