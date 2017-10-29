@@ -1,0 +1,29 @@
+{
+
+  "manifest_version": 2,
+  "name": "Overlay Animals",
+  "version": "1.0",
+
+  "description": "Adds a browser action icon to the toolbar. Click the button to choose a animal. The active tab's body content is then replaced with a picture of the chosen animal.",
+
+  "icons": {
+    "48": "icons/beasts-32.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/beasts-32.png",
+    "default_title": "Animals.me",
+    "default_popup": "popup/choose_animal.html"
+  },
+
+  "web_accessible_resources": [
+    "animals/frog.jpg",
+    "animals/turtle.jpg",
+    "animals/snake.jpg"
+  ]
+
+}
